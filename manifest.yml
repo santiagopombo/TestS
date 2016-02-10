@@ -1,0 +1,14 @@
+applications:
+- name: expense-api
+  env:
+    NODE_PATH: './config:./app/controllers'
+    NODE_ENV: 'production'
+  mem: 128M
+  services:
+    ${name}-mongo-db:
+       type: mongodb
+    ${name}-redis-db:
+       type: redis
+  stackato:
+    ignores:
+    - node_modules
