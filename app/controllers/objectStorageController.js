@@ -4,8 +4,8 @@ var request = require('request');
 var fs = require('fs');
 
 var authData = {
-    login: "10282162123634:alexander.shemyakin",
-    password: "Akvelon!!!",
+    login: "asd:asdas",
+    password: "asdsad",
     authUri: "https://region-a.geo-1.identity.hpcloudsvc.com:35357/auth/v1.0/",
     containerUri: "https://region-b.geo-1.objects.hpcloudsvc.com/v1/10282162123634/receipt/",
     token: null,
